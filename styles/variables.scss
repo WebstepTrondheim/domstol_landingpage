@@ -51,4 +51,8 @@ $color-subcolor: #f2b355;
     overflow: hidden;
 }
 
+@mixin blueBox {
+    height: 50vh;
+}
+
 $color-red: #e84f4f;

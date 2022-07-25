@@ -20,54 +20,7 @@ const DomstolIntroduction: React.VFC<IntroductionProps> = ({ allowScrolling }) =
     return (
         <>
             <section className={styles.container}>
-                <div className={styles.overlay}>
-                    <div className={styles.information}>
-                        <Image src={Weight} alt="" height="41" width="48" />
-                        <h1>
-                            DIGITALISERING <br /> AV DOMSTOLENE
-                        </h1>
-                        <p>
-                            Maktfordelingsprinsippet og de norske domstolenes
-                            uavhengighet er som stoffet din og min frihet er laget
-                            av. I flere europeiske land er Domstolenes uavhengighet
-                            truet. I Norge er uavhengigheten sterk og tilliten høy.
-                            Og den øker år for år. Det skal vi være glad for. Men
-                            tilliten til domstolene kommer med med et like stort
-                            ansvar.
-                        </p>
-                        <div className={styles.scrollDown}>
-                            <span>Scroll</span>
-                            <motion.div
-                                animate={{
-                                    y: [0, 8, 0]
-                                }}
-                                transition={{
-                                    repeat: Infinity,
-                                    duration: 1.5
-                                }}>
 
-                                <ArrowButton
-                                    direction={Direction.Down}
-                                    onClick={() => { }}
-                                    alt='pil ned'
-                                />
-                            </motion.div>
-                        </div>
-                    </div>
-                </div>
-                <motion.div className={styles.tintedBackground}
-                    initial={{
-                        width: '100vw'
-                    }}
-                    animate={{
-                        width: '0px'
-                    }}
-                    transition={{
-                        duration: 3.5,
-                        ease: 'linear'
-                    }}
-
-                />
                 <div className={styles.videoContainer}>
                     <video
                         src={require('../../../../public/assets/domstol/videos/Webstep_DA_illustrasjon_v02.mp4')}
